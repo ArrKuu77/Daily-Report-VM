@@ -1,0 +1,7 @@
+.ProductDetails{
+    display: flex;
+}
+.productCodeName,.productCodeQuantity,.productCodePrice,.productCodeAmount{
+    display: flex;
+    flex-direction: column;
+}
