@@ -1,7 +1,171 @@
-.ProductDetails{
+body{
+    background-color:darkcyan;
+    color: whitesmoke;
+}
+.Header{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid brown;
+    background-color: teal;
+}
+.ReportDetailListChild,.ReportForOrderListMinusChild{
     display: flex;
 }
-.productCodeName,.productCodeQuantity,.productCodePrice,.productCodeAmount{
+.AllCalls{
+    font-weight: bold;
+    font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   padding: 0 10px;
+}
+.Pharmacy,.DoctorCall,.ProductiveCalls{
+   width: 30%;
+}
+.MonthlyTarget{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.TargetDisplay{
+    margin-top: 2%;
+}
+.ProductFilder{
+    position: relative;
+    /* display: flex;
+    justify-content: space-around; */
+    /* width: 50%;
+    margin: 0 auto;
+    position: relative; */
+}
+.Product{
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    background-color: whitesmoke;
+    color: teal;
+    padding: 5px;
+    border-radius: 10px;
+    border:  solid 3px gray ;
+    width: 40%;
+}
+/* .ProductNameText{
+    font-size: 10%;
+    font-weight: 600;
+} */
+.ProductName{
+    border: solid 2px darkslategray;
+    padding: 5px;
+
+}
+.AddBGColor{
+    background-color: cadetblue;
+}
+.OneProductMaindiv,.ReportForOrderList,.ReportForOrderListMinus{
+    background-color: teal;
+    padding: 5px 0px 0px 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.DailyReportNote{
+    background-color: teal;
+    padding: 5px 0px 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.MinusProductListForReport{
+    font-size: 13px;
+}
+.TotalAmountAdd,.UpdateSaleButton,.ClearUpdateSale,.BalanceButtom,.AchievementButtom,.SaveTarget,.TotalAmountMinus,.ClearCalculator,.About{
+    margin: 10px 0px;
+    padding: 5px;
+    background-color: rgb(34, 199, 171);
+    color: rgb(58, 59, 145);
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+.BalanceAmount{
+    display: inline;
+}
+.Balance{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+}
+.AchievementAmount{
+    display: block;
+    font-size: 20px;
+}
+.Achievement{
+    margin-bottom: 5px;
+}
+.AddProductListForReport,.MinusProductListForReport{
+    display: none;
+    font-size: 15px;
+}
+.SaleReportCreate{
+    margin: 10px 0px;
+    padding: 5px;
+    background-color: rgb(34, 199, 171);
+    color: rgb(58, 59, 145);
+    border-radius: 10px;
+    border: 2px solid gray;
+    width: 100%;
+}
+.TotalAmountAdd,.UpdateSaleButton,.ClearCalculator,.TotalAmountMinus,.BalanceButtom,.AchievementButtom{
+    display: none;
+}
+.AboutDisplay{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color:darkcyan;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.ShowAbout{
+    opacity: 1;
+}
+.colseAbout{
+    display: flex;
+    justify-content: end;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+.LightAndDarkMode{
+    border: none;
+    height: 50%;
+    border: 4px solid gray;
+    padding: 5px;
+    background-color: rgb(34, 199, 171);
+    border-radius: 10px;
+    color: rgb(58, 59, 145);
+}
+.DarkMood{
+    background-color: darkslategray;
+    color: rgb(0, 0, 0);
+}
+.lightMood{
+    background-color: darkcyan;
+    color: white;
+}
+.ButtonColorAndBGColor{
+    background-color: rgb(9, 37, 46);
+    color:rgb(206, 192, 192);
+}
+.boderlightMode{
+    border: 2px solid brown;
+}
+.AboutAndDMchange{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

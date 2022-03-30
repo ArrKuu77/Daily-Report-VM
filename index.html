@@ -9,36 +9,35 @@
     <title>Document</title>
 </head>
 <body>
-    <label for="DoctorCall">DoctorCall</label>
-    <input type="number" id="DoctorCall" class="DoctorCall" required>
-    <label for="Pharmacy">Pharmacy</label>
-    <input type="number" id="Pharmacy" class="Pharmacy" required>
-    <label for="ProductiveCalls">ProductiveCalls</label>
-    <input type="number" id="ProductiveCalls" class="ProductiveCalls" required>
+    <h1 class="Header">Daily Report Create Form</h1>
+    <div class="AboutAndDMchange">
+        <button class="About">About</button>
+        <button class="LightAndDarkMode far fa-moon">DarkMode</button>
+    </div>
+    <div class="AllCalls">
+        <label for="DoctorCall">DoctorCall</label>
+        <input type="number" id="DoctorCall" class="DoctorCall" required><br>
+        <label for="Pharmacy">Pharmacy</label>
+        <input type="number" id="Pharmacy" class="Pharmacy" required><br>
+        <label for="ProductiveCalls">ProductiveCalls</label>
+        <input type="number" id="ProductiveCalls" class="ProductiveCalls" required>
+    </div>
     <div class="MonthlyTarget">
         <label for="Target">Target</label>
         <input type="number"  class="TargetInput">
         <button class="SaveTarget">SaveTarget</button>
-        <h2 class="TextTarget">Your Target -</h2>
-        <h2 class="TargetTextAmount"></h2>
+        <div class="TargetDisplay">
+            <span class="TextTarget">Your Target -</span>
+            <span class="TargetTextAmount"></span>
+        </div>
     </div>
-    <div class="UpdateSaleDaily">
-        <h2 class="UpdateSaleText">UpdateSale-</h2>
-        <h2 class="UpdateSaleAmount"></h2>
-    </div>
-    <button class="ClearUpdateSale">Clear UpdateSale</button>
-    <div class="Balance">
-        <button class="BalanceButtom">Balance-</button>
-        <h2 class="BalanceAmount"></h2>
-    </div>
-    <div class="Achievement">
-        <button class="AchievementButtom">Achievement-</button>
-        <h2 class="AchievementAmount"></h2>
-    </div>
-    <h1>Order Item</h1>
+    
     <div class="ProductFilder"> 
-        <span class="ProductNameText">ProductName</span>
-        <i class="fas fa-chevron-down DownArrow"></i>
+        <div class="FilderText">
+            <h3 class="OrderItem">Order Item</h3>
+            <span class="ProductNameText">ProductName</span>
+            <i class="fas fa-chevron-down DownArrow"></i>
+        </div>
         <div class="Product">
             <div class="ProductName">LifeCort (LPI)</div>
             <div class="ProductName">Ceftrialife (CFIM)</div>
@@ -69,16 +68,50 @@
         </div>
     </div>
     <div class="DailyReportcalculator"></div>
+    <div class="totalAmountCheck"></div>
 
-    <button class="TotalAmountAdd">TotalAmountPlus</button>
+    <button class="TotalAmountAdd">TotalAmountPlusUpdateSale</button>
     <div class="ToDaySaleAmount"></div>
 
+    <div class="ReportForOrderList"><span class="AddProductListForReport">Add Product List For Report</span></div>
+    <div class="ReportForOrderListMinus"><span class="MinusProductListForReport">Minus Product List For Report</span></div>
     <button class="TotalAmountMinus">MinusAmount</button>
     <div class="MinusAmount"></div>
+    <button class="ClearCalculator">Clear Calculator</button><br>
+    <div class="UpdateSaleDaily">
+        <h2 class="UpdateSaleText">UpdateSale-</h2>
+        <!-- <h2 class="UpdateSaleText">UpdateSale-</h2> -->
+        <h2 class="UpdateSaleAmount"></h2>
+        <button class="UpdateSaleButton">UpdateSale-</button>
+    </div>
+    <button class="ClearUpdateSale">Clear UpdateSale</button>
+   
+ 
+    
+    
+   
+    <div class="Balance">
+        <button class="BalanceButtom">Balance-</button>
+        <h2 class="BalanceAmount"></h2>
+    </div>
+    <div class="Achievement">
+        <button class="AchievementButtom">Achievement-</button>
+        <span class="AchievementAmount"></span>
+    </div>
 
-    <button class="ClearCalculator">Clear Calculator</button>
+  
     <div class="DailyReportNote"></div>
     <button class="SaleReportCreate">Ready to Sale Report Create</button>
+    <div class="AboutDisplay">
+        <div class="colseAbout">
+            <svg class="CloseButton" width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
+        </div>
+        <h1>About Wed</h1>
+        <span>Create By Aung Kaung San(ArrKuu)</span>
+        <h3>Create Date 27.3.22</h3>
+        <p>Easy to get a report form for job</p>
+        <h2>All the best ! </h2>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
